@@ -39,12 +39,11 @@ label start:
       "Честность и преданность":
         $dir = 'right'
     
-    if dir == 'left': 
-    ##play sound "sound/glass-smash.ogg"   
+    if dir == 'left':
      show madam angry at left
-     ma "Ну ты и мудак!"
-   
-        
+            play sound "sound/glass-smash.ogg"   
+      ma "Ну ты и мудак!"
+       
       
     else:
       ma "Дай поцелую."
