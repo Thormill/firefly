@@ -6,7 +6,7 @@
 define me = Character("Я")
 define ma = Character(_("Маша"), color="#db1717")
 define ba = Character(_("Бабушка"), color="#db1717")
-define ssl = Character(_("Сестра"), color="#008080")
+define sis = Character(_("Сестра"), color="#008080")
 
 
 ##glass-smash
@@ -15,6 +15,7 @@ define ssl = Character(_("Сестра"), color="#008080")
 
 label start:
   scene bg domleto
+  with fade
   play music "sound/summer01.ogg"
 
   "Такой воздух бывает только в детстве. Густой как патока. Пахнет травой, нагретой землей и приключениями, которые ждут за каждым поворотом."
@@ -46,12 +47,15 @@ label start:
   label meadow:
     play sound "sound/dundun.ogg"
     show baba
+    with dissolve
     ba "Андрей! Ты куда собрался!?!"
     "Это была Бабушка..."
     me "Да вот, решил погулять немного. По улице пройдусь, может до Луга дойду. Я не на долго, бабуль."
     ba "Хорошо. Иди конечно. Только сестру возьми, а то путается под ногами"
-    show ssl at right
     show baba at left
+    with moveoutleft
+    show sis righty
+    with moveinbottom
     "Это был конец. Надо было что-то срочно предпринять. Мелкая будет постоянно ныть, мешаться под ногами, а потом еще бабушке пожалуется. С другой сторны, если спорить, то могут и вовсе не отпустить."
     # jump на новую главу. сохраняем параметр
 
@@ -64,38 +68,37 @@ label start:
         jump sister
 
     label runaway:
-      play sound "sound/run.wav"
       scene bg  street
+      with fade
+      play sound "sound/run.wav"
       "Я рванул с места, что было сил. Ломая кусты и ветки, перепрыгнул через забор полисадника. Ударился коленом и потянул ногу, но не остановился. Позади я слышал сердитый голос бабушки и расстроенное хныканье сестры."
 
       return
       # jump
 
     label sister:
-      show ssl at right
-      show baba at left
+      hide baba
+      with moveoutleft
+      show baba #at left
+      with moveinbottom
+      show sis at right
+      with dissolve
       "Решив, что не буду лишний раз расстраивать бубушку, я вздохнул и посмотрел на сестру"
       me "Ну что. Пойдем Мелкая"
-      ssl "Ты чего вздыхаешь?"
+      sis "Ты чего вздыхаешь?"
       "Она надула губы и как будто-то бы обиделась."
       me "Просто так. Пойдем, только веди себя хорошо. Договорились?"
-      ssl "Ну даже не знаю..."
+      sis "Ну даже не знаю..."
       ba "Надя! Это что такое?"
-      ssl "Да пошутила я!"
+      sis "Да пошутила я!"
       play sound "sound/ssl-laughter.wav"
       scene bg  street
+      with fade
 
       return
 
     return
-
-
   #  #This ends the game.
-
-
-
-
-#show madam blush
 
   # These display lines of dialogue.
 
