@@ -1,4 +1,6 @@
 label summer:
+  $sis_points = 0
+
   scene bg domleto
   with fade
   play music "sound/summer01.ogg"
@@ -47,9 +49,10 @@ label summer:
     menu:
       "Убежать!":
         # $dir = 'pobeg'
+        $sis_points -= 1
         jump .runaway
       "Взять сестру с собой":
-        # $dir = 'zabratss'
+        $sis_points += 1
         jump .sister
 
     label .runaway:
