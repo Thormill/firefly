@@ -2,25 +2,21 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 64: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
-    "Убежать!":
-    ^
+File "game/script.rpy", line 48: if statement expects a non-empty block.
+    if dir == 'left': 
+                      ^
 
-File "game/script.rpy", line 71: Line is indented, but the preceding play sound statement statement does not expect a block. Please check this line's indentation.
-    scene bg  street
-    ^
-
-File "game/script.rpy", line 76: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
-    show ssl at right
-    ^
-
-File "game/script.rpy", line 80: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
-    ssl "Ты чего вздыхаешь?"
-    ^
-
-File "game/script.rpy", line 91: expected statement.
+File "game/script.rpy", line 60: expected statement.
     else:
         ^
 
+File "game/script.rpy", line 81: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation.
+    jump episode2
+    ^
+
+File "game/script.rpy", line 94: expected menuitem
+    if dir == 'pobeg': 
+    ^
+
 Ren'Py Version: Ren'Py 6.99.14.3.3347
-Wed Apr 25 21:33:39 2018
+Mon Apr 30 18:39:19 2018
