@@ -12,7 +12,7 @@
 ##
 ## The _() surrounding the string marks it as eligible for translation.
 
-define config.name = _("HelloWorld")
+define config.name = _("Firefly")
 
 
 ## Determines if the title given above is shown on the main menu screen. Set
@@ -73,7 +73,7 @@ define config.has_voice = True
 ## Entering or exiting the game menu.
 
 define config.enter_transition = dissolve
-define config.exit_transition = dissolve
+define config.exit_transition = fade
 
 
 ## Between screens of the game menu.
@@ -83,7 +83,7 @@ define config.intra_transition = dissolve
 
 ## A transition that is used after a game has been loaded.
 
-define config.after_load_transition = None
+define config.after_load_transition = dissolve
 
 
 ## Used when entering the main menu after the game has ended.
@@ -142,7 +142,7 @@ default preferences.afm_time = 15
 ## This generally should not be changed, and if it is, should always be a
 ## literal string, not an expression.
 
-define config.save_directory = "HelloWorld-1524419387"
+define config.save_directory = "Firefly-1524419387"
 
 
 ## Icon ########################################################################
