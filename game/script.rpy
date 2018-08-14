@@ -25,7 +25,7 @@ init:
 label start:
   #call intro
   call hospital_start from _call_hospital_start
-  call hospital_next 
+  call hospital_next from _call_hospital_next 
   call room from _call_room 
   call tram_start from _call_tram_start
   call tram_fin from _call_tram_fin

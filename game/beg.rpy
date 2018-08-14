@@ -3,6 +3,6 @@
 
 label beg:
 
-  $ renpy.movie_cutscene(`tresh.mkv`)
-  
+  $ renpy.movie_cutscene(`movies/tresh.mkv`)
+
   return
