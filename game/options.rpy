@@ -94,10 +94,6 @@ define config.end_game_transition = None
 ## A variable to set the transition used when the game starts does not exist.
 ## Instead, use a with statement after showing the initial scene.
 
-# дефолтная скорость набора текста
-define config.default_text_cps = 25
-
-
 
 ## Window management ###########################################################
 ##
@@ -123,7 +119,7 @@ define config.window_hide_transition = Dissolve(.2)
 ## Controls the default text speed. The default, 0, is infinite, while any other
 ## number is the number of characters per second to type out.
 
-default preferences.text_cps = 0
+default preferences.text_cps = 25
 
 
 ## The default auto-forward delay. Larger numbers lead to longer waits, with 0
