@@ -26,7 +26,7 @@ init python:
 define gui.accent_color = '#cc6600'
 
 ## The color used for a text button when it is neither selected nor hovered.
-define gui.idle_color = '#aaaaaa'
+define gui.idle_color = '#434345'   #aaaaaa старый цвет
 
 ## The small color is used for small text, which needs to be brighter/darker to
 ## achieve the same effect.
@@ -209,8 +209,8 @@ define gui.choice_button_borders = Borders(100, 5, 100, 5)
 define gui.choice_button_text_font = gui.text_font
 define gui.choice_button_text_size = gui.text_size
 define gui.choice_button_text_xalign = 0.5
-define gui.choice_button_text_idle_color = "#cccccc"
-define gui.choice_button_text_hover_color = "#ffffff"
+define gui.choice_button_text_idle_color = "#333333"
+define gui.choice_button_text_hover_color = "#cccccc"
 
 
 ## File Slot Buttons ###########################################################
