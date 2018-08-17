@@ -19,11 +19,18 @@ init:
 
 ##glass-smash
 
+# гайд по сохранению прогресса между играми, открытию галереи, концовок и прочему.
+# https://www.renpy.org/doc/html/persistent.html
+
 # The game starts here.
 
 
 label start:
   #call intro
+  # на начало игры твоя карма 0. var делает её доступной везде
+  default karma = 0
+  # $ karma = 0
+
   call hospital_start from _call_hospital_start
   call hospital_next from _call_hospital_next
   call room from _call_room
