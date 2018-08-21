@@ -8,7 +8,7 @@
     with Pause(1)
     show text "{color=#FFFFFF}Когда гнев богов постигает человека, то прежде всего божество отнимает у него здравый смысл и дает превратное направление его мыслям, чтобы он не сознавал своих ошибок.     Ликург{/color}" with dissolve
     with Pause(8)
-    show text "{color=#FFFFFF}{size=+20}ДЕМО 0.01 beta{/size}{/color}" with dissolve
+    show text "{color=#FFFFFF}{size=+20}ДЕМО 0.02 beta{/size}{/color}" with dissolve
     with Pause(2)
     hide text with dissolve
    
