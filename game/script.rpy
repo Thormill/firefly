@@ -30,10 +30,10 @@ label start:
   # на начало игры твоя карма 0.
   default karma = 0
 
-  call hospital_start from _call_hospital_start
-  call hospital_next from _call_hospital_next
-  call room from _call_room
-  call tram_start from _call_tram_start
-  call tram_fin from _call_tram_fin
+  call hospital.start
+  call hospital.next
+  call room
+  call tram_start
+  call tram_fin
   #call summer
   #call tram_after_summer
