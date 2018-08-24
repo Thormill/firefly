@@ -27,9 +27,8 @@ init:
 
 label start:
   #call intro
-  # на начало игры твоя карма 0. var делает её доступной везде
+  # на начало игры твоя карма 0.
   default karma = 0
-  # $ karma = 0
 
   call hospital_start from _call_hospital_start
   call hospital_next from _call_hospital_next
