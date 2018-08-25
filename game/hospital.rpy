@@ -243,6 +243,7 @@ label hospital_next:
     show shade2 with dissolve:
       xalign 0.0
       yalign 1.0
+    play music "sound/Sorrow.mp3"
     "Не оборачиваясь, вышла в коридор."
     hide shade2 with dissolve
 
